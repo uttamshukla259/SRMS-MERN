@@ -362,7 +362,7 @@ const Admin = () => {
           <input id="resultChemistry" placeholder="CHEMISTRY" />
           <input id="resultPhysics" placeholder="PHYSICS" />
           <input id="resultEnglish" placeholder="ENGLISH" />
-          <input id="resultElectrical" placeholder="ELECTRICAL" />
+          <input id="resultElectrical" placeholder="COMPUTER" />
           <input id="resultTotal" placeholder="TOTAL" />
           <button onClick={addResult}>Add Result</button>
           <button onClick={() => setCurrentSection(null)}>Back</button>
