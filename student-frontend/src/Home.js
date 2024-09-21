@@ -1,5 +1,10 @@
 import React from "react";
 import "./Home.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import studentGif from "./image/student1.gif";
+import adminGif from "./image/admin.gif";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -25,13 +30,14 @@ const Home = () => {
               <strong>User-Friendly Interface:</strong> Easily navigate through
               your results, helping you focus on your education.
             </p>
+            <div className="b1">
+              <Link to="student" className="l1">
+                Student <FontAwesomeIcon icon={faArrowRight} className="icon" />
+              </Link>
+            </div>
           </div>
           <div className="f1">
-            <img
-              src="https://i.pinimg.com/originals/c3/ff/fb/c3fffbed1207d91467708b02a2713cfc.gif"
-              alt="Feature GIF"
-              className="feature-gif"
-            />
+            <img src={studentGif} alt="Feature GIF" className="feature-gif" />
           </div>
         </div>
         <div className="feature">
@@ -45,13 +51,14 @@ const Home = () => {
               <strong>Secure Access:</strong> Only authorized personnel can
               manage the data, ensuring student information is protected.
             </p>
+            <div className="b1">
+              <Link to="admin" className="l1">
+                Admin <FontAwesomeIcon icon={faArrowRight} className="icon" />
+              </Link>
+            </div>
           </div>
           <div className="f1">
-            <img
-              src="https://cdnl.iconscout.com/lottie/premium/thumb/teacher-teaching-in-class-5680022-4729863.gif"
-              alt="Feature GIF"
-              className="feature-gif"
-            />
+            <img src={adminGif} alt="Feature GIF" className="feature-gif" />
           </div>
         </div>
       </section>

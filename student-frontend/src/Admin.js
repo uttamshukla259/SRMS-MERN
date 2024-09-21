@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import admin1Gif from "./image/admin1.gif";
 import "./App.css";
 
 const adminPassword = "8757300503";
@@ -424,11 +425,7 @@ const Admin = () => {
           </p>
         </div>
         <div>
-          <img
-            src="https://cdn.dribbble.com/users/1138853/screenshots/4834993/06_08_gif.gif"
-            alt="Feature GIF"
-            className="feature-gif"
-          />
+          <img src={admin1Gif} alt="Feature GIF" className="feature-gif" />
         </div>
       </div>
     </div>

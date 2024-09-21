@@ -1,4 +1,5 @@
 import "./App.css";
+import student1Gif from "./image/student1.gif";
 import React, { useState } from "react";
 
 const Student = () => {
@@ -101,11 +102,7 @@ const Student = () => {
           </p>
         </div>
         <div>
-          <img
-            src="https://i.pinimg.com/originals/41/f7/b9/41f7b947df92a22f22dc3f9fd914187e.gif"
-            alt="Feature GIF"
-            className="feature-gif"
-          />
+          <img src={student1Gif} alt="Feature GIF" className="feature-gif" />
         </div>
       </div>
 
